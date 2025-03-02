@@ -11,7 +11,7 @@
     "lint": "expo lint",
     "clean": "npx expo prebuild --clean",
     "android_go": "expo start --android",
-    "ios_go": "expo start --ios",
+    "ios_go": "expo start --ios"
   },
   "jest": {
     "preset": "jest-expo"
