@@ -10,4 +10,9 @@ export const App_Routes = [
 		route: "/timer",
 		screens: [],
 	},
+	{
+		name: "SearchBox in list",
+		route: "/search",
+		screens: [],
+	}
 ];
