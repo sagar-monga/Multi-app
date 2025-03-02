@@ -1,5 +1,5 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React, { useEffect, useState } from "react";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 let intervalId: any = null;
 const CountDownTimer = () => {
@@ -41,7 +41,6 @@ const CountDownTimer = () => {
 				backgroundColor: "lightblue",
 			}}
 		>
-			{/* <Text style={{color: 'black'}}>Home</Text> */}
 			<Text style={{ color: "black", fontSize: 70 }}>{timer}</Text>
 			<TouchableOpacity
 				onPress={handleReset}
