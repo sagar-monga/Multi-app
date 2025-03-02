@@ -40,3 +40,7 @@ app-example
 # lock files
 yarn.lock
 package-lock.json
+
+# build folders
+/android
+/ios
