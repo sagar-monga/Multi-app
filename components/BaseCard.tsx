@@ -16,7 +16,7 @@ const BaseCard = ({ item }: Props) => {
 				router.push(item.route as any);
 			}}
 		>
-			<Text style={styles.title} numberOfLines={3}>
+			<Text style={styles.title} numberOfLines={3} ellipsizeMode="tail">
 				{item.name}
 			</Text>
 		</TouchableOpacity>
@@ -36,6 +36,5 @@ const styles = StyleSheet.create({
 	title: {
 		width: 100,
 		textAlign: "center",
-		clip: "ellipses",
 	},
 });
