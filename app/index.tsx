@@ -1,6 +1,7 @@
 import { App_Routes } from "@/app/config/routes";
 import BaseCard from "@/components/BaseCard";
-import React from "react";
+import { Colors } from "@/constants/Colors";
+import { Constants } from "@/constants/Constants";
 import { FlatList, StyleSheet, View } from "react-native";
 
 const Home = () => {
@@ -8,18 +9,14 @@ const Home = () => {
 		<View
 			style={{
 				flex: 1,
-				backgroundColor: "lightblue",
+				backgroundColor: Colors.primary,
 			}}
 		>
 			<FlatList
-				numColumns={2}
+				numColumns={Constants.num_columns}
 				style={{ flex: 1 }}
 				data={App_Routes}
 				renderItem={({ item }) => <BaseCard item={item} />}
-				columnWrapperStyle={{
-					justifyContent: "space-evenly",
-					marginTop: 10,
-				}}
 			/>
 		</View>
 	);

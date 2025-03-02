@@ -1,6 +1,7 @@
 import { RouteType } from "@/app/config/routes";
+import { Colors } from "@/constants/Colors";
+import { Constants } from "@/constants/Constants";
 import { useRouter } from "expo-router";
-import React from "react";
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
 type Props = {
@@ -27,14 +28,17 @@ export default BaseCard;
 
 const styles = StyleSheet.create({
 	buttonStyle: {
-		backgroundColor: "black",
-		padding: 40,
+		margin: 10,
+		backgroundColor: Colors.tertiary,
+		paddingVertical: 40,
 		borderRadius: 20,
+		flex: 1 / Constants.num_columns,
 		justifyContent: "center",
 		alignItems: "center",
 	},
 	title: {
-		width: 100,
+		maxWidth: 80,
 		textAlign: "center",
+		color: "white",
 	},
 });
